@@ -1,6 +1,6 @@
 #Download base image ubuntu 20.04
 # FROM ubuntu:20.04
-FROM ubuntu:22.04
+FROM ubuntu:20.04
 
 # LABEL about the custom image
 LABEL maintainer="djortiz"
@@ -26,6 +26,8 @@ ENV PATH=$CONDA_DIR/bin:$PATH
 RUN conda install -c conda-forge gdal
 
 # Install CMAKE for GEOS
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt update && apt-get -y install tzdata
 RUN apt-get update && apt-get -y install cmake
 
 # Install GEOS
@@ -53,6 +55,14 @@ RUN apt-get install -y git
 
 # Install jupyter
 RUN pip3 install jupyter -U && pip3 install jupyterlab
+
+# Install Rasterio
+RUN apt-get install -y software-properties-common
+RUN add-apt-repository ppa:ubuntugis/ppa && \
+    apt-get update
+RUN apt-get install -y python-numpy gdal-bin libgdal-dev
+RUN pip install rasterio
+    
 
 # Basemap
 #RUN pip install pip==18.1
