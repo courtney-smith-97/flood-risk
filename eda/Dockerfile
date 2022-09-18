@@ -1,4 +1,4 @@
-#Download base image ubuntu 20.04
+
 # FROM ubuntu:20.04
 FROM ubuntu:20.04
 
@@ -22,9 +22,6 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86
 # Put conda in path so we can use conda activate
 ENV PATH=$CONDA_DIR/bin:$PATH
 
-# Install GDAL
-RUN conda install -c conda-forge gdal
-
 # Install CMAKE for GEOS
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update && apt-get -y install tzdata
@@ -44,8 +41,6 @@ RUN cd geos-3.11.0 && \
 # Install Spatial Index
 RUN conda install -c conda-forge libspatialindex=1.9.3
 
-# Upgrade pip
-RUN pip install --upgrade pip
 
 # Install required python packages for GeoPandas'
 RUN pip3 install pillow pysal geopandas rtree geopy
@@ -62,12 +57,26 @@ RUN add-apt-repository ppa:ubuntugis/ppa && \
     apt-get update
 RUN apt-get install -y python-numpy gdal-bin libgdal-dev
 RUN pip install rasterio
-    
+
+# Install GDAL
+#RUN conda install -c conda-forge gdal
+#RUN pip3 install --global-option=build_ext --global-option="-I/usr/include/gdal" GDAL==`gdal-config --version`
+
+
+#RUN pip install pip==18.1
+RUN add-apt-repository ppa:ubuntugis/ppa && apt-get update && \
+    apt-get update && \
+    apt-get install -y gdal-bin && \
+    apt-get install -y libgdal-dev && \
+    apt-get install -y python3-dev && \
+    export CPLUS_INCLUDE_PATH=/usr/include/gdal && \
+    export C_INCLUDE_PATH=/usr/include/gdal && \
+    pip install GDAL==`gdal-config --version`
 
 # Basemap
 #RUN pip install pip==18.1
 #RUN pip3 install https://github.com/matplotlib/basemap/archive/v1.0.7rel.tar.gz
-
+    
 RUN mkdir workspace
 
 # Launch Jupyter Server
