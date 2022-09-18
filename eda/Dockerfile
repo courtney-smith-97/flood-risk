@@ -46,7 +46,7 @@ RUN conda install -c conda-forge libspatialindex=1.9.3
 RUN pip install --upgrade pip
 
 # Install required python packages for GeoPandas'
-RUN pip3 install pillow pysal geopandas rtree
+RUN pip3 install pillow pysal geopandas rtree geopy
 
 # Install git
 RUN apt-get install -y git
