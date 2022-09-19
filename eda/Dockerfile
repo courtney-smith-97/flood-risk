@@ -72,6 +72,18 @@ RUN add-apt-repository ppa:ubuntugis/ppa && apt-get update && \
     export CPLUS_INCLUDE_PATH=/usr/include/gdal && \
     export C_INCLUDE_PATH=/usr/include/gdal && \
     pip install GDAL==`gdal-config --version`
+    
+# Install Earthpy
+RUN pip install earthpy
+
+# Install PySal
+RUN pip install pysal
+
+# Install Pysal ESDA
+RUN pip install -U esda
+
+# Install splot
+RUN pip install splot
 
 # Basemap
 #RUN pip install pip==18.1
