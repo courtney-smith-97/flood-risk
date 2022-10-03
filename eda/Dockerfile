@@ -41,6 +41,8 @@ RUN cd geos-3.11.0 && \
 # Install Spatial Index
 RUN conda install -c conda-forge libspatialindex=1.9.3
 
+# Install Proj.r (Coordinat System)
+RUN apt-get install -y proj-bin
 
 # Install required python packages for GeoPandas'
 RUN pip3 install pillow pysal geopandas rtree geopy
@@ -52,18 +54,13 @@ RUN apt-get install -y git
 RUN pip3 install jupyter -U && pip3 install jupyterlab
 
 # Install Rasterio
-RUN apt-get install -y software-properties-common
+RUN apt-get update && apt-get install -y software-properties-common
 RUN add-apt-repository ppa:ubuntugis/ppa && \
     apt-get update
 RUN apt-get install -y python-numpy gdal-bin libgdal-dev
 RUN pip install rasterio
 
 # Install GDAL
-#RUN conda install -c conda-forge gdal
-#RUN pip3 install --global-option=build_ext --global-option="-I/usr/include/gdal" GDAL==`gdal-config --version`
-
-
-#RUN pip install pip==18.1
 RUN add-apt-repository ppa:ubuntugis/ppa && apt-get update && \
     apt-get update && \
     apt-get install -y gdal-bin && \
@@ -74,16 +71,16 @@ RUN add-apt-repository ppa:ubuntugis/ppa && apt-get update && \
     pip install GDAL==`gdal-config --version`
     
 # Install Earthpy
-RUN pip install earthpy
+# RUN pip install earthpy
 
-# Install PySal
-RUN pip install pysal
+# Install Python Packages
+RUN pip install pysal splot earthpy scipy plotly dash jupyter-dash scikit-learn Shapely PyKrige
 
 # Install Pysal ESDA
-RUN pip install -U esda
+# RUN pip install -U esda 
 
-# Install splot
-RUN pip install splot
+# # Install splot
+# RUN pip install splot
 
 # Basemap
 #RUN pip install pip==18.1
