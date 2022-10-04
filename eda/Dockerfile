@@ -75,6 +75,7 @@ RUN add-apt-repository ppa:ubuntugis/ppa && apt-get update && \
 
 # Install Python Packages
 RUN pip install pysal splot earthpy scipy plotly dash jupyter-dash scikit-learn Shapely PyKrige
+RUN pip install packaging xarray
 
 # Install Pysal ESDA
 # RUN pip install -U esda 
