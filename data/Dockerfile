@@ -77,16 +77,13 @@ RUN add-apt-repository ppa:ubuntugis/ppa && apt-get update && \
 RUN pip install pysal splot earthpy scipy plotly dash jupyter-dash scikit-learn Shapely PyKrige
 RUN pip install packaging xarray
 
-# Install Pysal ESDA
-# RUN pip install -U esda 
 
-# # Install splot
-# RUN pip install splot
+# This is only for extracting X values. It will cause gdal to fail
+# RUN pip uninstall pandas
+# RUN pip install pandas==1.3.4
+# RUN pip install pyvista gempy
+# RUN apt-get install ffmpeg libsm6 libxext6  -y
 
-# Basemap
-#RUN pip install pip==18.1
-#RUN pip3 install https://github.com/matplotlib/basemap/archive/v1.0.7rel.tar.gz
-    
 RUN mkdir workspace
 
 # Launch Jupyter Server
