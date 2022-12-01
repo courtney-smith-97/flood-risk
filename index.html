@@ -48,6 +48,9 @@
             <a class="nav-link" href="#mission-page">Mission</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#advantage-page">Advantage</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#data-page">Data</a>
           </li>
           <li class="nav-item">
@@ -56,9 +59,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#about-page">About</a>
           </li>
-          <li class="nav-item">
+<!--           <li class="nav-item">
             <a class="nav-link external" href="website/pages/advantage.html">Advantage</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link external" href="https://github.com/courtney-smith-97/flood-risk">GitHub</a>
           </li>
@@ -80,7 +83,7 @@
             <i class="fa-solid fa-droplet hero-logo logo-child"></i>
             <h1 class="big-heading logo-child">floodwise</h1>
           </div>
-          <h3 class="big-heading-subtitle">Flood Risk. Powerd by Geospacial Machine Learning.</h3>
+          <h3 class="big-heading-subtitle">Flood Risk Insights. Powered by Geospatial Machine Learning.</h3>
           <button type="button" class="btn btn-primary btn-lg hero-button"><i class="fa-solid fa-droplet"></i> Flood Insights</button>
         </div>
         <div class="col-lg-8">
@@ -92,34 +95,36 @@
     </div>
   </section>
 
-  <!-- End of Title Page -->
+  <!-- End Title Page -->
 
   <!-- Mission Page -->
   <section class="colored-section" id="mission-page">
     <div class="container-fluid">
       <h2>Mission</h2>
+      <p>Climate chage is having an increasingly frequent and significant impact as a result of worsening storm severity and rising sea levels.</p>
+      <p>Cities face unique flooding risks during these storms as dense urban development leads to high proportions of impervious ground cover.</p>
+      <p>Floodwise aims to equip cities with the data necessary for planning climate resilience efforts and infrastructure investments by providing granular insights on potential flooding risks and impacts.</p>
       <div class="row">
         <div class="mission-box col-lg-4">
           <i class="icon fa-solid fa-shield fa-4x"></i>
-          <h3 class="mission-title">Home Protection</h3>
-          <p>
-            Discover the flood risk of your home and neighboorhood and take action to protect your family.
+          <h3 class="mission-title">Comprehensive Geospatial Data Mapping</h3>
+          <p>Map geographic and infrastructural features layer-by-layer at the census block level to visualize risk factors by neighborhood.
           </p>
         </div>
 
         <div class="mission-box col-lg-4">
           <i class="icon fa-solid fa-landmark fa-4x"></i>
-          <h3 class="mission-title">Infrastructure Investment</h3>
+          <h3 class="mission-title">Risk Identification and Categorization</h3>
           <p>
-            Identify high-risk areas for civic leaders and prioritize infrastructure development.
+            Identify feature interactions tied to increased flood risk to categorize overall risk level for each neighborhood.
           </p>
         </div>
 
         <div class="mission-box col-lg-4">
           <i class="icon fa-solid fa-house-flood-water fa-4x"></i>
-          <h3 class="mission-title">Disaster Planning</h3>
+          <h3 class="mission-title">Insights for Risk Mitigation</h3>
           <p>
-            Invest in communities most at risk of the effects of climate change.
+            Analyze demographic data against risk levels to recommend intervention efforts and assist with investment prioritization.
           </p>
         </div>
       </div>
@@ -127,10 +132,34 @@
     </div>
 
   </section>
-  <!-- End of Mission Page -->
+  <!-- End Mission Page -->
+    
+  <!-- Advantage Page -->
+  <section class="white-section" id="advantage-page">
+    <div class="container-fluid">
 
+      <div class="row">
+
+        <div class="col-lg-6 half-info">
+          <h2>How is floodwise different?</h2>
+          <p>
+            Floodwise models flood risk levels based on geographic and demographic features validated against past extreme weather events. Floodwise doesn't make real-time weather predictions -- it was built to assist with long-term planning for climate resilience and risk mitigation. </p>
+<!--           <a type="button" href="website/pages/app.html" class="external page-launch btn btn-primary"><i class="fa-solid fa-droplet"></i> Flood Insights</a> -->
+          <a type="button" href="website/pages/advantage.html" class="external page-learn-more btn btn-outline-dark">Learn More</a>
+        </div>
+        <div class="col-lg-6 half-image">
+
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- End Advantage Page -->
+    
   <!-- Data Page -->
-  <section class="white-section" id="data-page">
+  <section class="colored-section" id="data-page">
     <div class="container-fluid">
 
       <div class="row">
@@ -138,11 +167,8 @@
         <div class="col-lg-6 half-info">
           <h2>Data</h2>
           <p>
-            Floodwise leverages NYC Open Data from NYC Department of IT and Telecommunications and the United States
-            Census Bureau to develop insights into flood risk. Learn more by selecting the learn more button
-            or launch the demo to experience floodwise insights.
-          </p>
-          <a type="button" href="website/pages/app.html" class="external page-launch btn btn-primary"><i class="fa-solid fa-droplet"></i> Flood Insights</a>
+            Floodwise leverages free public data published by the US Census Bureau and by New York City agencies through NYC Open Data. Click Learn More to view the full list of datasets behind floodwise.</p>
+<!--           <a type="button" href="website/pages/app.html" class="external page-launch btn btn-primary"><i class="fa-solid fa-droplet"></i> Flood Insights</a> -->
           <a type="button" href="website/pages/data-info.html" class="external page-learn-more btn btn-outline-dark">Learn More</a>
         </div>
         <div class="col-lg-6 half-image">
@@ -154,9 +180,10 @@
     </div>
 
   </section>
+  <!-- End Data Page -->
 
   <!-- Model Page -->
-  <section class="colored-section" id="model-page">
+  <section class="white-section" id="model-page">
     <div class="container-fluid">
       <div class="row">
 
@@ -167,19 +194,20 @@
         <div class="col-lg-6 model-section-margin">
           <h2>Model</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas erat imperdiet sed euismod.
+            Floodwise utilizes clustering methods tuned to maximize risk segmentation.
           </p>
-          <a type="button" href="website/pages/app.html" class="external page-launch btn btn-primary"><i class="fa-solid fa-droplet"></i> Flood Insights</a>
           <a type="button" href="website/pages/model-info.html" class="external page-learn-more btn btn-outline-dark">Learn More</a>
+          <a type="button" href="website/pages/app.html" class="external page-launch btn btn-primary"><i class="fa-solid fa-droplet"></i> Flood Insights</a>
         </div>
 
       </div>
     </div>
 
   </section>
+  <!-- End Model Page -->
 
   <!-- About Page -->
-  <section class="white-section" id="about-page">
+  <section class="colored-section" id="about-page">
     <div class="container-fluid">
 
       <h2>Meet the Team</h2>
@@ -188,7 +216,7 @@
         <div class="mission-box col-lg-3">
           <img class="prfile-image" src="website/images/cs.png" alt="Image of CS">
           <h3 class=" team-name">Courtney Smith</h3>
-            <h4 class="team-role">Project Manager</h4>
+            <h4 class="team-role">Lead Data Scientist | Project Manager</h4>
             <a type="button" class="btn btn-outline-secondary social" href="https://www.linkedin.com/in/courtney-smith-817b4b128"><i class="fa-brands fa-linkedin"></i></a>
             <a type="button" class="btn btn-outline-secondary social" href="https://github.com/courtney-smith-97"><i class="fa-brands fa-github"></i></a>
         </div>
@@ -221,6 +249,7 @@
       <img class="berkeley-info-logo" src="website/images/berkeleyischool-logo-blue-med.png" alt="Berkeley iSchool Logo Blue">
     </div>
   </section>
+  <!-- End About Page -->
 
   <!-- Footer -->
   <section class="footer-section" id="footer">
