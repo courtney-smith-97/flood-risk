@@ -1,0 +1,205 @@
+/* Global Settings */
+
+h2 {
+  font-family: "Exo";
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007EA7;
+}
+
+h3 {
+  font-family: "Exo";
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007EA7;
+}
+
+h4 {
+  font-family: "Montserrat";
+  font-size: .75rem;
+  font-weight: lighter;
+}
+
+h7 {
+  font-family: "Montserrat";
+}
+
+p {
+  font-family: "Montserrat";
+}
+
+/* Buttons */
+
+/* Sections */
+
+.colored-section {
+  background-color: #EBF2F8;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Containers */
+
+.container-fluid{
+  padding: 3% 3%;
+}
+
+.container-title {
+  padding: 0% 3%;
+}
+
+.half-info {
+  padding: 0% 10%;
+}
+
+.half-image {
+
+}
+
+/* Navigation Bar */
+
+.navbar {
+  /* padding: 0 0 0.5rem; */
+}
+.navbar-custom {
+  background-color: #fff;
+}
+
+.navbar-brand {
+  font-family: "Exo";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.navbar-logo-icon {
+  font-family: "Exo";
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007EA7;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Exo";
+  font-weight: lighter;
+}
+
+.navbar-launch-button  {
+  font-size: 1.2rem;
+  font-family: "Exo";
+  font-weight: bolder;
+  text-align: center;
+  padding: 50 18px;
+}
+
+/* Title Image */
+
+.title-image {
+  width: 100%;
+  position: absolute;
+}
+
+.big-heading {
+  font-family: "Exo";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  color: #00171F;
+}
+
+.title-area {
+  margin: 13% 0% 13%;
+}
+
+/* Title Page */
+#landing-logo-parent {
+  white-space: nowrap;
+}
+
+.logo-child {
+  display: inline-block;
+}
+
+.hero-logo {
+  color: #007EA7;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+
+
+/* Mission Page */
+#mission-page {
+  position: relative;
+}
+
+.mission-title {
+  font-size: 1.5rem;
+}
+
+.mission-box {
+  text-align: center;
+  padding: 4.5%;
+}
+
+.icon {
+  color: #00171F;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.icon:hover {
+  color: #00A8E8;
+}
+
+/* Data Page */
+
+/* Model Page */
+
+.model-section-margin {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.cluster-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+/* Data Page */
+.data-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* About Page */
+
+.berkeley-info-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+.prfile-image {
+  border-radius: 50%;
+  width: 175px;
+}
+
+/* footer */
+
+#footer {
+  background-color: #003459;
+  text-align: center;
+}
+
+.copywrite-statement {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
