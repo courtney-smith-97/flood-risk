@@ -217,6 +217,15 @@ p {
   width: 175px;
 }
 
+/* Advantage page */
+
+.adv-chart {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
 /* footer */
 
 #footer {
