@@ -131,6 +131,16 @@ p {
   line-height: 1.5;
 }
 
+.city-flood-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.data-text {
+  padding:
+}
 
 
 /* Mission Page */
