@@ -246,3 +246,11 @@ p {
   color: #fff;
   margin-bottom: 0.5rem;
 }
+
+
+/* App */
+
+.iframe-map {
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -71,19 +71,41 @@
 
     </nav>
     <!-- Navbar -->
+    <script type="application/javascript">
+      function resizeIFrameToFitContent(iFrame) {
+
+        iFrame.width = iFrame.contentWindow.document.body.scrollWidth;
+        iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+      }
+
+      window.addEventListener('DOMContentLoaded', function(e) {
+
+        var iFrame = document.getElementById('iFrame1');
+        resizeIFrameToFitContent(iFrame);
+
+        // or, to resize all iframes:
+        var iframes = document.querySelectorAll("iframe");
+        for (var i = 0; i < iframes.length; i++) {
+          resizeIFrameToFitContent(iframes[i]);
+        }
+      });
+    </script>
     <!-- App Page -->
     <section class="white-section" id="model-demo">
       <div class="container-fluid">
         <h2>NYC Flood Risk Demo</h2>
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 border">
             <h3>App Instructions</h3>
           </div>
 
           <div class="col-lg-8">
-            <iframe class="iframe-map" src="relitive file path" width="" height="">
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="iframe-map" src="../models/pre-final-model.html">
+              <!-- <iframe class="iframe-map" src="../models/hdbscan_test_small.html"> -->
 
             </iframe>
+          </div>
           </div>
 
         </div>
@@ -103,6 +125,6 @@
       </div>
     </section>
 
-  </body>
+</body>
 
-  </html>
+</html>
