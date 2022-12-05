@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>flisk</title>
+  <title>floodwise</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu|Exo" rel="stylesheet">
@@ -71,9 +71,67 @@
 
     </nav>
     <!-- Navbar -->
-    <p>
-      This is the future page on model info
-    </p>
+
+    <!-- Data Page -->
+    <section class="white-section" id="landscape">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-lg-12">
+            <h2>Analysis</h2>
+            <p>
+              The model allows us to identify high-levels of risk by distilling the concept of risk to several key points: Hazard, Exposure, and Vulnerability. Each of these three componenets contribute to risk and bring a vague concept into an interaction of these three points. This allows us to frame risk as the intermingling of these three effects.
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDA Page -->
+    <section class="colored-section" id="eda">
+      <div class="container-fluid">
+        <h3>Hazard</h3>
+        <div class="row">
+          <div class="col-lg-6 model-section-margin">
+
+            <p>
+              Our concept of hazard differentiates our work from current industry solutions by including land cover in our definition of flood hazard. Research identifies the general trend of converting green spaces to high density urban land use as a significant driver in the <a href="https://www.sciencedirect.com/science/article/pii/S1674987121000888">magnitude of flood damage</a>.
+              </p>
+<p>
+              Different categories of land cover react to water in different ways. The general shift from green spaces to high density urban development has resulted in land cover that does a poor job at both absorbing water and returning it to the water table. Land cover that supports tree canopies, grass, and soil contribute to reducing the effect of storm surge by absorbing a portion of that water while buildings, roads, and other impervious surfaces merely retain flood water.
+            </p>
+<p>
+              This permits more water to remain in a neighborhood as potential storms and floods continue to pile on, which increases the hazard to a neighborhood.<br>
+            </p>
+          </div>
+
+        </div>
+        <br>
+        <h3>Exposure</h3>
+        <div class="row">
+          <div class="col-lg-6 model-section-margin">
+            <p>
+              The second piece of our risk concept is the vulnerability of a neighborhood. While Hazard tells us whether an area faces danger, Vulnerability examines the effect of the potential hazard. If a building floods and no one is around to be in danger, the building didn’t really flood.
+            </p>
+            <p>
+              We integrate the vulnerability concept into our model by considering population density. This draws our attention to neighborhoods where more people live and work which should help triage our analysis. It should be noted that some Census Blocks are densely populated due to the nature of their residents: universities, hospitals, incarcerated populations.
+            </p>
+          </div>
+
+        </div>
+        <br>
+        <h3>Vulnerability</h3>
+        <div class="row">
+
+          <div class="col-lg-6 model-section-margin">
+            <p>
+              The final leg of risk is exposure. If we have a large population in the way of harm and a significant degree of hazard, the final axis is the magnitude of the disaster or flood-event. There are a few ways to measure this: rainfall location, distance to a body of water, elevation. Ultimately, we pursued elevation as the driver of exposure since rainfall will vary from storm to storm and elevation scales better than distance to water. Low-lying areas are much more susceptible to flooding due to their proximity to water and inability to displace rising storm surge, which heavily influences the overall perceived risk of flooding.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
     <section class="footer-section" id="footer">
       <div class="container-fluid">
