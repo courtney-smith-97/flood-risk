@@ -178,6 +178,21 @@ p {
   margin-right: auto;
 }
 
+.data-feature-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.data-feature-title {
+  text-align: center;
+}
+
+.data-feature-description {
+  text-align: center;
+}
+
 /* About Page */
 
 .berkeley-info-logo {
