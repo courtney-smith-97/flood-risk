@@ -265,3 +265,34 @@ p {
   height: 100vh;
   overflow: auto;
 }
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+
+  #mission-page {
+    text-align: center;
+  }
+
+  #advantage-page{
+    text-align: center;
+  }
+
+  #data-page {
+    text-align: center;
+  }
+  #model-page {
+    text-align: center;
+  }
+
+  #about-page{
+    text-align: center;
+  }
+}
