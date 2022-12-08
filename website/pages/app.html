@@ -95,18 +95,113 @@
       <div class="container-fluid container-app">
         <h2>NYC Flood Risk Demo</h2>
         <div class="row">
-          <div class="col-lg-4 border">
-            <h3>App Instructions</h3>
+          <div class="col-lg-4 border col-auto data-table table-responsive align-self-center">
+            <table class="table thread-light">
+              <thread>
+                <tr>
+                  <th>
+                    <h3>Map Key</h3>
+                  </th>
+                  <th>
+                    <h3>Classification</h3>
+                  </th>
+                  <th>
+                    <h3>Description</h3>
+                  </th>
+
+                </tr>
+
+                <tr>
+                  <th>
+                    <p>-1</p>
+                  </th>
+                  <th>
+                    <p>Noise</p>
+                  </th>
+                  <th>
+                    <p>No match to any clusters.</p>
+                  </th>
+                </tr>
+
+                <tr>
+                  <th>
+                    <p>0</p>
+                  </th>
+                  <th>
+                    <p>Neutral Risk</p>
+                  </th>
+                  <th>
+                    <p>Average impervious/permeable proportions, slightly above elevation,
+                      average catch basind density, average population.</p>
+                  </th>
+                </tr>
+
+                <tr>
+                  <th>
+                    <p>1</p>
+                  </th>
+                  <th>
+                    <p>Medium High Risk</p>
+                  </th>
+                  <th>
+                    <p>High impervious cover, below average elevation, below average
+                      catch basin density, average population</p>
+                  </th>
+                </tr>
+
+                <tr>
+                  <th>
+                    <p>2</p>
+                  </th>
+                  <th>
+                    <p>High Risk</p>
+                  </th>
+                  <th>
+                    <p>Highest impervious cover, below average elevation, below average
+                      catch basin density, average population</p>
+                  </th>
+                </tr>
+
+
+                <tr>
+                  <th>
+                    <p>3</p>
+                  </th>
+                  <th>
+                    <p>Low Risk</p>
+                  </th>
+                  <th>
+                    <p>Lowest impervious cover, above average elevation, low/average
+                      catch basin density, average population</p>
+                  </th>
+                </tr>
+
+
+                <tr>
+                  <th>
+                    <p>4</p>
+                  </th>
+                  <th>
+                    <p>Medium Low Risk</p>
+                  </th>
+                  <th>
+                    <p>Low impervious cover, above average elevation, low catch
+                      basin density, average population</p>
+                  </th>
+                </tr>
+
+              </thread>
+            </table>
           </div>
 
           <div class="col-lg-8">
             <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="iframe-map" src="../pages/dbscan_all_boro_model.html">
-<!--             <iframe class="iframe-map" src="../models/pre-final-model.html"> -->
-              <!-- <iframe class="iframe-map" src="../models/hdbscan_test_small.html"> -->
+              <iframe class="iframe-map" src="../pages/dbscan_all_boro_model.html">
+                <!--             <iframe class="iframe-map" src="../models/pre-final-model.html"> -->
+                <!-- <iframe class="iframe-map" src="../models/hdbscan_test_small.html"> -->
 
-            </iframe>
-          </div>
+              </iframe>
+            </div>
           </div>
 
         </div>
